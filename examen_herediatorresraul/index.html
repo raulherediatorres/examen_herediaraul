@@ -3,153 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
-    <style>
-        body{
-            background-image: "https://hips.hearstapps.com/hmg-prod/images/restaurantes-moda-barcelona-roka-6475ba03ee8bc.jpeg";
-        }
-    </style>
+    <title>Restaurante XYZ</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
-    <h1>Menu d'avui dia 03/11/2023</h1>
-    <div class="">
-        <h2>Lunes</h2>
-        <h3>Primer Plato:</h3>
-        <ul>
-            <li>Sopa de Lentejas</li>
-            <li>Ensalada César
-            </li>
-            <li>Risotto de champiñones
-            </li>
-        </ul>
-        <h3>Segundo Plato:</h3>
-        <ul>
-            <li>Lomo de cerdo a la parrilla con salsa de mostaza</li>
-            <li>Salmón a la plancha con puré de patatas
-            </li>
-            <li>Espaguetis a la bolognesa
-            </li>
-        </ul>
-        <h3>Postre:</h3>
-        <ul>
-            <li>Tarta de chocolate con helado de vainilla
-            </li>
-            <li>Fruta fresca de temporada
-            </li>
-            <li>Tiramisú
-            </li>
-        </ul>
-        <h2>Martes</h2>
-        <h3>Primer Plato:</h3>
-        <ul>
-            <li>Sopa de tomate</li>
-            <li>Ensalada griega
-            </li>
-            <li>Paella de mariscos
-            </li>
-        </ul>
-        <h3>Segundo Plato:</h3>
-        <ul>
-            <li>Pollo al curry con arroz basmati
-            </li>
-            <li>Bacalao a la vizcaína
-            </li>
-            <li>Ratatouille
-            </li>
-        </ul>
-        <h3>Postre:</h3>
-        <ul>
-            <li>Flan de caramelo
-            </li>
-            <li>Manzana asada
-            </li>
-            <li>Helado de fresa
-            </li>
-        </ul>
-        <h2>Miercoles</h2>
-        <h3>Primer Plato:</h3>
-        <ul>
-            <li>Gazpacho
-            </li>
-            <li>Tabulé
-            </li>
-            <li>Crema de espárragos
-            </li>
-        </ul>
-        <h3>Segundo Plato:</h3>
-        <ul>
-            <li>Entrecot a la pimienta con patatas gratinadas
-            </li>
-            <li>Merluza en salsa verde
-            </li>
-            <li>Pasta primavera
-            </li>
-        </ul>
-        <h3>Postre:</h3>
-        <ul>
-            <li>Pastel de queso con frutos rojos
-            </li>
-            <li>Pera en almíbar
-            </li>
-            <li>Mousse de limón
-            </li>
-        </ul>
-        <h2>Jueves</h2>
-        <h3>Primer Plato:</h3>
-        <ul>
-            <li>Sopa de calabaza
-            </li>
-            <li>Ensalada de aguacate
-            </li>
-            <li>Arroz con setas
-            </li>
-        </ul>
-        <h3>Segundo Plato:</h3>
-        <ul>
-            <li>Costillas de cerdo a la barbacoa con maíz asado
-            </li>
-            <li>Trucha a la plancha con puré de calabacín
-            </li>
-            <li>Canelones de espinacas y ricotta
-            </li>
-        </ul>
-        <h3>Postre:</h3>
-        <ul>
-            <li>Tarta de manzana
-            </li>
-            <li>Kiwi fresco
-            </li>
-            <li>Helado de vainilla
-            </li>
-        </ul>
-        <h2>Viernes</h2>
-        <h3>Primer Plato:</h3>
-        <ul>
-            <li>Sopa de cebolla
-            </li>
-            <li>Ensalada de quinoa
-            </li>
-            <li>Tortilla española
-            </li>
-        </ul>
-        <h3>Segundo Plato:</h3>
-        <ul>
-            <li>Pechuga de pollo a la naranja con arroz salvaje
-            </li>
-            <li>Bacalao al pil-pil
-            </li>
-            <li>Lasaña de carne
-            </li>
-        </ul>
-        <h3>Postre:</h3>
-        <ul>
-            <li>Tiramisú
-            </li>
-            <li>Mango maduro
-            </li>
-            <li>Flan de vainilla
-            </li>
-        </ul>
-    </div>
-</html>
+    <div class="container mt-4">
+        <h1>Menú del día</h1>
+
+        <div class="form-group">
+            <label for="diaSemana">Selecciona el día de la semana:</label>
+            <select class="form-control" id="diaSemana">
+                <option>Lunes</option>
+                <option>Martes</option>
+                <option>Miércoles</option>
+                <option>Jueves</option>
+                <option>Viernes</option>
+            </select>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label id="horarioApertura" for="horarioApertura">Horario de Apertura:</label>
+                <input type="time" class="form-control" id="horarioApertura">
+            </div>
+            <div class="form-group col-md-6">
+                <label id="horarioCierre" for="horarioCierre">Horario de Cierre:</label>
+                <input type="time" class="form-control" id="horarioCierre">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="buscadorMenu">Buscar en el menú:</label>
+            <input type="text" class="form-control" id="buscadorMenu">
+        </div>

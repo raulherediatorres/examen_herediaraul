@@ -70,5 +70,49 @@ const carta =
     "segundacomida2": "Mango maduro",
     "terceracomida2": "Flan de vainilla",
     }
-    
-  ]
+]
+    document.querySelector("diaSemana").addEventListener("change", mostrarMenuDelDia)
+
+    const hoy = new Date().getDay()
+
+    function mostrarMenuDelDia() {
+        const diaSeleccionado = document.querySelector("diaSemana").value
+
+        if (diaSeleccionado == Lunes) {
+            let menuHTML 
+            for (let i=0;i<carta.length;i++){
+                menuHTML += `<h2>Día ${carta.Lunes}</h2>`
+            }
+        }
+        if (diaSeleccionado == Martes){
+            let menuHTML2 
+            for (let i=0;i<carta.length;i++){
+                menuHTML2 += `<h2>Día ${carta.Martes}</h2>`
+            }
+        }
+        if (diaSeleccionado == Miercoles){
+            let menuHTML3 
+            for (let i=0;i<carta.length;i++){
+                menuHTML3 += `<h2>Día ${carta.Miercoles}</h2>`
+            }
+        }
+        if (diaSeleccionado == Jueves){
+            let menuHTML4 
+            for (let i=0;i<carta.length;i++){
+                menuHTML4 += `<h2>Día ${carta.Jueves}</h2>`
+            }
+        }
+        if (diaSeleccionado == Viernes){
+            let menuHTML5 
+            for (let i=0;i<carta.length;i++){
+                menuHTML5 += `<h2>Día ${carta.Viernes}</h2>`
+            }
+        }
+    }
+    function calcularTiempoHastaApertura() {
+        const horarioApertura = document.querySelector("#horarioApertura").value
+        const horarioCierre = document.querySelector("#horarioCierre").value
+        const horaActual = new Date().getHours()
+        const minutosActuales = new Date().getMinutes()
+    }
+ 
